@@ -32,6 +32,9 @@
     * Install your package by adding it in terminal: `uv add --editable --dev {YOUR-PROJECT-NAME}`. Replace `{YOUR-PROJECT-NAME}` with the name of your project given in `pyproject.toml` (so in the case of this repo, the command would be `uv add --editable --dev uv-streamlit-setup`).
     * You can check that the install was successful by running the command `uv pip list` - your project package should show up in the list.
     * Run the updated `hello.py` using streamlit in the terminal with the command `streamlit run hello.py`. The streamlit app should launch in you browser and display expected outputs.
-     
+    * You can now try modifying your code in the package (e.g. add a new function in a module and call it in `hello.py`); rerunning the streamlit dashboard (which you can set to 'Always rerun' in the top right) you should find that these updates are reflected without having to reinstall the package.
+
+10. 
+
 
 
