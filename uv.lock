@@ -659,13 +659,21 @@ wheels = [
 [[package]]
 name = "uv-streamlit-setup"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "streamlit" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "uv-streamlit-setup" },
+]
+
 [package.metadata]
 requires-dist = [{ name = "streamlit", specifier = ">=1.40.2" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "uv-streamlit-setup", editable = "." }]
 
 [[package]]
 name = "watchdog"

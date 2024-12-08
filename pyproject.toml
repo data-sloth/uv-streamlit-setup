@@ -14,4 +14,12 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ['src']
-include = ['lib*']
+include = ['myproject*']
+
+[tool.uv.sources]
+uv-streamlit-setup = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "uv-streamlit-setup",
+]

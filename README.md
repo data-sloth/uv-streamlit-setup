@@ -15,5 +15,23 @@
     2. Activating the virtual environment in terminal by running `.venv\Scripts\activate`.
     3. Running `hello.py` using streamlit in the terminal with the command `streamlit run hello.py`. The streamlit app should launch in you browser and display as expected. 
     4. To stop running the app, use `Ctrl + C` in the terminal. This will allow you to continue running other commands in terminal (you will have to close the webpage manually though).
+9. Now set up your repo as a Python package to make it easier to organise your code and call functions and classes from different subdirectories. It will be editable so it will stay up to date as you modify your repo going forward.
+    * Create a `src` directory in your workspace, and add another subdirectory inside it with the name of your project (the name of this folder is going to be what you call the repo package from. Don't use any special characters in it.).
+    * Add the following to the `pyproject.toml` file (replacing `myproject` with your chosen name`):
+
+            [build-system]
+            requires = ["setuptools>=42"]
+            build-backend = "setuptools.build_meta"
+
+            [tool.setuptools.packages.find]
+            where = ['src']
+            include = ['myproject*']
+
+    * You can add further subdirectories and functions under `myproject` - see this repo for an example setup. Note how scripts in different directories of equal hierarchy can call each other. 
+    * Add code to `hello.py` that calls functions under `myproject` - see how the import works in the code in this repo. In order to run the app smoothly in Streamlit Community Cloud, it is best to keep the main script to be run by streamlit at the root of your repo.
+    * Install your package by adding it in terminal: `uv add --editable --dev {YOUR-PROJECT-NAME}`. Replace `{YOUR-PROJECT-NAME}` with the name of your project given in `pyproject.toml` (so in the case of this repo, the command would be `uv add --editable --dev uv-streamlit-setup`).
+    * You can check that the install was successful by running the command `uv pip list` - your project package should show up in the list.
+    * Run the updated `hello.py` using streamlit in the terminal with the command `streamlit run hello.py`. The streamlit app should launch in you browser and display expected outputs.
+     
 
 
