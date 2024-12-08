@@ -1,5 +1,7 @@
+import streamlit as st
+
 def main():
-    print("Hello from uv-streamlit-setup!")
+    st.header("Hello from uv-streamlit-setup!")
 
 
 if __name__ == "__main__":

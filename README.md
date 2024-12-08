@@ -9,4 +9,5 @@
     * If you create the repo via Github, initialise it empty (without a README file, for example).
 6. Run `hello.py` in terminal using the command `uv run hello.py`.
     * This should create the environment using `uv`, including the creation of a `.venv` subdirectory (containing a newly created vitual environment for your project) and a `uv.lock` file in the root directory (which specifies your project's dependencies).
-7.  
+7.  Add `streamlit` to your virtual environment by running `uv add streamlit` in the terminal. Streamlit and its dependencies should all be added to the virtual environment, the `pyproject.toml` file and the `uv.lock` file.
+    * Check that everthing is working by runn
