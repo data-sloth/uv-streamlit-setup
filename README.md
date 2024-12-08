@@ -34,7 +34,7 @@
     * Run the updated `hello.py` using streamlit in the terminal with the command `streamlit run hello.py`. The streamlit app should launch in you browser and display expected outputs.
     * You can now try modifying your code in the package (e.g. add a new function in a module and call it in `hello.py`); rerunning the streamlit dashboard (which you can set to 'Always rerun' in the top right) you should find that these updates are reflected without having to reinstall the package.
 
-10. 
+10. Now you can deploy the app! First, make sure to commit and sync your latest code to your repo in Github. Then in the top right corner of your locally-running streamlit app you can click the 'Deploy' button and choose the option to 'Deploy now' to Streamlit Community Cloud. Confirm the repo url, branch and main file path that is shown on the subsequent form, come up with a url prefix for your app. If you do not yet have an account (or are not logged in), you will need to create/log in to your Streamlit account first. Hit the Deploy button and within a few seconds your app will be live!
 
 
 
