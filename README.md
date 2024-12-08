@@ -7,3 +7,6 @@
 5. Commit this state as an initial commit in git, and publish to Github. 
     * The repo will need to be public in order for it to be deployed to Streamlit Community Cloud.
     * If you create the repo via Github, initialise it empty (without a README file, for example).
+6. Run `hello.py` in terminal using the command `uv run hello.py`.
+    * This should create the environment using `uv`, including the creation of a `.venv` subdirectory (containing a newly created vitual environment for your project) and a `uv.lock` file in the root directory (which specifies your project's dependencies).
+7.  
