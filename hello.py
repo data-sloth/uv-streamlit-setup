@@ -2,7 +2,7 @@ import streamlit as st
 from myproject.pkg2 import complex_fn
 
 def main():
-    st.header("Hello from uv-streamlit-setup!")
+    st.header("Hello from uv-setup-example!")
 
     val1 = st.number_input('Value 1')
     val2 = st.number_input('Value 2')
