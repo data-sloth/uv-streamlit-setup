@@ -37,5 +37,6 @@
 10. Now you can deploy the app! First, make sure to commit and sync your latest code to your repo in Github. Then in the top right corner of your locally-running streamlit app you can click the 'Deploy' button and choose the option to 'Deploy now' to Streamlit Community Cloud. Confirm the repo url, branch and main file path that is shown on the subsequent form, come up with a url prefix for your app. If you do not yet have an account (or are not logged in), you will need to create/log in to your Streamlit account first. Hit the Deploy button and within a few seconds your app will be live!
     * From now on, all commits synced to this branch of your repo will be reflected live in the hosted app.
 
+11. Finally, let's set up a basic test framework. We will use pytest, so go ahead and `uv add pytest`, and create a `tests` directory to contain your test scripts (see example in this repo). You will also need to update `pyproject.toml` to add a `pythonpath` that will tell pytest where to look for the functions it needs to test - see commit "add pytest tests" for all the code changes/additions made in this example.
 
 
